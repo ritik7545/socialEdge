@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Social Edge</title>
+    <link rel="icon" type="images/webp" href="../images/logo.webp">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right top, #6200ff, #8a2be2); /* Beautiful full gradient, consistent with about.html */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .services-container {
+            background-color: rgba(153, 17, 207, 0.726);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 1000px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: left;
+        }
+        .services-container h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #fff;
+            text-align: center;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .pricing-card {
+            background: linear-gradient(to bottom right, #e3fc02, #04e977); /* Gradient similar to index.html cards */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(25, 112, 184, 0.3);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-8px);
+        }
+        .pricing-card h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+        .pricing-card .price {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #0c0c0c; /* Highlight price */
+            text-align: left; /* Align price to the left */
+        }
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+        .pricing-card ul li {
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #2906f3;
+            text-align: left; /* Align list items to the left */
+        }
+        .pricing-card .btn {
+            background-color: #007bff;
+            color: #0f0f0f;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .pricing-card .btn:hover {
+            background-color: #0056b3;
+        }
+        .back-home {
+            margin-top: 30px;
+            color: #0f0f0f;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .back-home:hover {
+            background-color: rgba(8, 143, 233, 0.76);
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .services-container {
+                padding: 20px;
+            }
+            .services-container h1 {
+                font-size: 2.5em;
+            }
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="services-container">
+        <h1>Our Service Offerings</h1>
+        <p>Choose the plan that best fits your social media needs. We offer flexible solutions tailored to help you achieve your goals.</p>
+
+        <div class="pricing-grid">
+            <!-- Service 1: Basic Boost -->
+            <div class="pricing-card">
+                <h2>Basic Boost</h2>
+                <p class="price">$299<span>/month</span></p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Social Media Audit</li>
+                    <li><i class="fas fa-check-circle"></i> Content Strategy (Monthly)</li>
+                    <li><i class="fas fa-check-circle"></i> 10 Posts/Month</li>
+                    <li><i class="fas fa-check-circle"></i> Basic Engagement Monitoring</li>
+                    <li><i class="fas fa-check-circle"></i> Monthly Performance Report</li>
+                </ul>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+
+            <!-- Service 2: Growth Accelerator -->
+            <div class="pricing-card">
+                <h2>Growth Accelerator</h2>
+                <p class="price">$599<span>/month</span></p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Everything in Basic Boost</li>
+                    <li><i class="fas fa-check-circle"></i> Advanced Content Creation</li>
+                    <li><i class="fas fa-check-circle"></i> 25 Posts/Month</li>
+                    <li><i class="fas fa-check-circle"></i> Proactive Community Management</li>
+                    <li><i class="fas fa-check-circle"></i> Weekly Performance Reports + Strategy Calls</li>
+                    <li><i class="fas fa-check-circle"></i> Basic Ad Campaign Management</li>
+                </ul>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+
+            <!-- Service 3: Elite Domination -->
+            <div class="pricing-card">
+                <h2>Elite Domination</h2>
+                <p class="price">$999<span>/month</span></p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Everything in Growth Accelerator</li>
+                    <li><i class="fas fa-check-circle"></i> Premium Content Production (Video/Graphics)</li>
+                    <li><i class="fas fa-check-circle"></i> Unlimited Posts/Month</li>
+                    <li><i class="fas fa-check-circle"></i> Dedicated Social Media Manager</li>
+                    <li><i class="fas fa-check-circle"></i> Comprehensive Ad Campaign Management</li>
+                    <li><i class="fas fa-check-circle"></i> Influencer Outreach & Collaborations</li>
+                    <li><i class="fas fa-check-circle"></i> Crisis Management & Reputation Building</li>
+                </ul>
+                <a href="#" class="btn">Dominate Now</a>
+            </div>
+        </div>
+    </div>
+    <a href="../index.html" class="back-home">Back to Home</a>
+</body>
+</html> 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery - Social Edge</title>
+    <link rel="icon" type="images/webp" href="../images/logo.webp">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to main style.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            background: linear-gradient(135deg,  #76bad1 100%);/* Multi-color gradient background */
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #f2f700; /* Yellow heading color */
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-family: 'Dancing Script', cursive; /* Script font for title */
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax for vertical video size */
+            gap: 1.5rem;
+        }
+        .video-item {
+            background: #1a1a1a; /* Dark background for cards */
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Aspect ratio container */
+             width: 100%; /* Take full width of grid cell */
+             padding-top: 177.77%; /* 9:16 Aspect Ratio (16 / 9 * 100) */
+             position: relative;
+        }
+         .video-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .video-item iframe, .video-item video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 1.2rem;
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+        }
+         .back-link:hover {
+            text-decoration: blueviolet;
+            color: #4b07eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Our Video Projects</h1>
+        <div class="video-grid">
+            <!-- Example Video Items (Replace with your video embeds or <video> tags) -->
+            <div class="video-item">
+                <iframe src="video/ritik.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <!-- Add more video-item divs for more videos -->
+        </div>
+        <a href="../index.html" class="back-link">← Back to Main Page</a>
+    </div>
+</body>
+</html> 

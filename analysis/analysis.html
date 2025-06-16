@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Analysis - Social Edge</title>
+    <link rel="icon" type="images/webp" href="../images/logo.webp">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #6b0580 0%, #3a8ef6 33%, #34e89e 66%, #ffd200 100%);
+            color: #050505;
+            font-family: 'Poppins', sans-serif;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .analysis-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f2f700;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #f2f700;
+        }
+
+        .stat-card h3 {
+            font-size: 1.8rem;
+            margin: 0.5rem 0;
+            color: #fff;
+        }
+
+        .stat-card p {
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0;
+        }
+
+        .chart-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-title {
+            color: #f2f700;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .chart {
+            width: 100%;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .insight-card {
+            background: rgba(255, 255, 255, 0.308);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 1.5rem;
+        }
+
+        .insight-card h3 {
+            color: #f2f700;
+            margin-bottom: 1rem;
+        }
+
+        .insight-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .insight-card li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .insight-card li:before {
+            content: "•";
+            color: #f2f700;
+            position: absolute;
+            left: 0;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 1.2rem;
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: blueviolet;
+            color: #4b07eb;
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .insights-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="analysis-container">
+        <h1>Instagram Analytics</h1>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <h3>10.5K</h3>
+                <p>Total Followers</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-heart"></i>
+                <h3>25.3K</h3>
+                <p>Total Likes</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-comment"></i>
+                <h3>1.2K</h3>
+                <p>Total Comments</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>4.8%</h3>
+                <p>Engagement Rate</p>
+            </div>
+        </div>
+
+        <!-- <div class="chart-container">
+            <h2 class="chart-title">Follower Growth</h2>
+            <div class="chart"> -->
+                <!-- Add your chart visualization here -->
+                <!-- <p style="text-align: center; padding-top: 150px;">Chart visualization will be added here</p>
+            </div>
+        </div> -->
+
+        <div class="insights-grid">
+            <div class="insight-card">
+                <h3>Top Performing Posts</h3>
+                <ul>
+                    <li>Product showcase post - 2.5K likes</li>
+                    <li>Behind-the-scenes content - 2.1K likes</li>
+                    <li>Customer testimonial - 1.8K likes</li>
+                </ul>
+            </div>
+            <div class="insight-card">
+                <h3>Audience Insights</h3>
+                <ul>
+                    <li>65% Female, 35% Male</li>
+                    <li>Top age group: 25-34</li>
+                    <li>Most active: Weekends</li>
+                </ul>
+            </div>
+            <div class="insight-card">
+                <h3>Content Recommendations</h3>
+                <ul>
+                    <li>Increase video content</li>
+                    <li>Post during peak hours</li>
+                    <li>Use more hashtags</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="../index.html" class="back-link">← Back to Main Page</a>
+    </div>
+</body>
+</html> 
