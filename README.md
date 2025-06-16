@@ -18,12 +18,10 @@ socialEdge is a powerful and intuitive social media management platform designed
 - 🔒 Secure Authentication
 
 
-## 📝 License
-
 
 ## 📞 Contact
 
-- Website: [socialEdge.com](https://www.linkedin.com/in/ritikkumarsah/)
+- Person: [Ritik](https://www.linkedin.com/in/ritikkumarsah/)
 - Email: ritik.work790@gamil.com
 
 
