@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
         'images/1.png',
+        'images/1.jpg',
         'images/2.png',
         'images/3.jpg',
         // 'images/logo.webp'

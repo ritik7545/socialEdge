@@ -151,7 +151,7 @@ html {
 
 .more-about-card .icon, .showcase-projects-card .icon {
     font-size: 2em;
-    color: #007bff;
+    color: #fbfcfd;
     margin-bottom: 10px;
 }
 
@@ -201,7 +201,7 @@ html {
 .stat-item .number {
     font-size: 2.5em;
     font-weight: 700;
-    color: #007bff;
+    color: #fafcfd;
     margin-bottom: 5px;
 }
 
@@ -262,7 +262,7 @@ html {
 
 .services-card .icon, .profiles-card .icon {
     font-size: 2em;
-    color: #007bff;
+    color: #f6f7f8;
     margin-bottom: 10px;
 }
 
